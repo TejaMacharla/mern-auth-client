@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Layout from './core/Layout'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const App=()=>{
+  return(
+    <Layout>
+    <div className="col-md-6 offset-md-3 text-center">
+      <h1 className="p-5 ">React Node MongoDB Authentication</h1>
+      <h2>MERN STACK</h2>
+      <hr/>
+      <p className="lead"> MERN stack web development by building production ready login register system with account activation, forgot password, reset password, login with facebook, login with google as well as ACL by implementing private and protected routes for authenticated user and users with the role of admin. </p>
     </div>
-  );
+    </Layout>
+  )
 }
-
-export default App;
+export default App
